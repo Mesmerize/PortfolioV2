@@ -752,6 +752,7 @@ body::-webkit-scrollbar-track{
 .proj-img {
   max-width: auto;
   max-height: 300px;
+  border-radius: 2px;
 }
 
 .project-title {
@@ -1168,6 +1169,10 @@ input:focus::placeholder {
     font-weight: 400;
     letter-spacing: 0.04em;
     padding-left: 163px;
+  }
+
+  footer {
+    padding-bottom: 15px;
   }
 
   footer li {
