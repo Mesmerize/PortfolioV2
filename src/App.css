@@ -1,38 +1,1246 @@
-.App {
-  text-align: center;
+/* NavBar Styling */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: #0D0D0D;
+}
+
+nav {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+}
+
+.logo {
+  font-family: 'Mr Dafoe', cursive;
+  display: inline-block;
+  color: white;
+  font-size: 37px;
+  padding-left: 163px;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding-right: 126px;
+}
+
+/* Li Items */
+/* .mobile-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-right: 126px;
+}
+
+.mobile-item a {
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+  top:100px;
+  left: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.mobile-item {
+  display: none;
+}
+
+.mobile-menu-icons {
+  list-style: none;
+  display: flex;
+  position: relative;
+  left: 270px;
+}
+
+[type=checkbox] {
+  display: none;
+}
+
+#nav_bars:checked ~ ul.mobile-menu li{
+    display: block;
+} */
+
+/* end of li items */
+
+.item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.item:hover a {
+  text-shadow: 0 0 20px #0099ff;
+}
+
+.item:hover::after a {
+  color: #0099ff;
+  filter: blur(15px);
+}
+
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .logo {
+    padding-left: 60px;
+  }
+  .menu {
+    padding-right: 67px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 1400px) {
+  .logo {
+    padding-left: 30px;
+  }
+  .menu {
+    position: relative;
+    /* left: 150px; */
+    left: 43px;
+  }
+}
+
+/* iPad */
+@media screen and (max-width: 769px) {
+  nav {
+    transform: scale(1.8); 
+    padding-left: 30px;
+    padding-right: -90px;
+  }
+
+  .logo {
+    font-family: 'Mr Dafoe', cursive;
+    display: inline-block;
+    color: white;
+    font-size: 37px;
+    padding-left: 163px;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+}
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  nav {
+    position: relative;
+    right: 180px;
+    transform: scale(1.1);
+  }
+  .menu {
+    display: none;
+  }
+}
+
+/* Mobile Nav */
+/* @media screen and (min-width: 1080px) {
+  .mobile-menu-icons {
+    display: none;
+  }
+
+  .mobile-menu {
+    list-style: none;
+    display: none;
+    padding-right: 126px;
+  }
+} */
+
+/* About Section */
+
+.flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  padding-left: 194px;
+  padding-top: 170px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  z-index: 2;
+}
+
+.line {
+  height: 2px;
+  width: 290px;
+  background-color: white;
+}
+
+.example {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-child {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.flex-child:first-child {
+  margin-right: 25px;
+}
+.icon-space {
+ margin-left: 25px;
+ transition: all .3s ease-in-out;
+}
+
+.linkedin:hover {
+  color: cyan;
+  transition: all .3s ease-in-out;
+}
+
+.github:hover {
+  color: rgb(128, 127, 127);
+  transition: all .3s ease-in-out;
+}
+
+.discord:hover {
+  color: rgb(87, 11, 228);
+}
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .flex-container {
+    padding-left: 92px;
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .flex-container {
+    padding-left: 70px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 769px) {
+  .flex-container {
+    padding-left: 35px;
+  }
+}
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  .flex-container {
+    padding-left: 20px;
+  }
+  .line {
+    max-width: 150px;
+  }
+}
+
+
+
+/* Start of Content Section */
+
+.content-section {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 220px;
+  margin-bottom: -350px;
+  z-index: 1;
+}
+
+.intro {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.5em;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.blue {
+  color: #1DB1E0;
+}
+
+.interest {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 35px;
+}
+
+/* Working on Image Section pretty fucking hard *FINISHED */
+
+.image-section {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 220px;
+  bottom: 585px;
+  z-index: -1;
+}
+
+.img-edit {
+  max-width: auto;
+  height: 532px;
+}
+
+/* Button Mods */
+
+button:hover {
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.buttons {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+  right: 30px;
+  max-width: 300px;
+}
+
+.buttons button {
+  padding: 15px 64px;
+  margin: 30px 25px 30px 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.space {
+  margin: 25px;
+  position: relative;
+  right: 27px;
+}
+
+#btn {
+  background: #070707;
+  border: 2px solid #070707;
+  color: #abb7b7;
+  width: 100%;
+}
+
+#btn:hover {
+  background: #abb7b7;
+  color: #fff;
+}
+
+#btn:active {
+  background: #070707;
+  border-color: #fff;
+}
+
+/* End of Button Mods */
+
+/* Start of Custom Scroll Bar */
+body::-webkit-scrollbar{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #2b2a2a;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: #abb7b7;
+}
+/* End of Custom Scroll Bar */
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .content-section {
+    padding-left: 122px;
+  }
+
+  .image-section {
+    padding-right: 135px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .content-section {
+    padding-left: 90px;
+  }
+
+  .intro {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.5em;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .interest {
+    font-size: 15px;
+  }
+
+  .image-section {
+    left: 20px;
+    padding-top: 70px;
+  }
+
+  .img-edit {
+    height: 420px;
+  }
+
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 769px) {
+  .content-section {
+    padding-left: 55px;
+  }
+
+  .intro {
+    font-size: 44px;
+  }
+
+  .interest {
+    font-size: 20px;
+  }
+
+  /* recently changed */
+  .image-section {
+    padding-top: 900px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 182px;
+    padding-right: 182px;
+    left: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  .content-section {
+    padding-left: 35px;
+    margin-bottom: -640px; 
+  }
+
+  .intro {
+    font-size: 21px;
+  }
+
+  .interest {
+    font-size: 11px;
+  }
+  .image-section {
+    transform: scale(0.6);
+    padding-left: 136px;
+  }
+}
+
+/* End of Content Section */
+
+
+/* Beginning of Skill Section */
+
+.skill-header {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.skill-paragraph {
+  padding-top: 50px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skill-section {
+  position: relative;
+  padding-top: 230px;
+  padding-left: 220px;
+  margin-bottom: 368px;
+  z-index: 4;
+}
+
+.skills {
+  display: flex;
+  padding-top: 70px;
+}
+
+.skill-name {
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.skill-space {
+  margin-left: 315px;
+}
+
+.express, .mongo {
+  margin-left: 332px;
+}
+
+.jquery {
+  margin-left: 325px;
+}
+
+.py {
+  margin-left: 408px;
+}
+
+.sass {
+  margin-left: 345px;
+}
+
+.css {
+  margin-left: 388px;
+}
+
+/* Programming Language Icon Hover Effects */
+
+.js:hover .example, .js:hover {
+  color: rgb(228, 228, 19);
+  transition: all 0.3s ease-in-out;
+}
+
+.react:hover .example, .react:hover {
+  color: rgb(34, 185, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+.node:hover .example, .node:hover {
+  color: rgb(7, 204, 56);
+  transition: all 0.3s ease-in-out;
+}
+
+.git:hover .example, .git:hover {
+  color: rgb(255, 61, 13);
+  transition: all 0.3s ease-in-out;
+}
+
+.html:hover .example, .html:hover {
+  color: rgb(233, 98, 8);
+  transition: all 0.3s ease-in-out;
+}
+
+.css:hover .example, .css:hover {
+  color: rgb(7, 115, 204);
+  transition: all 0.3s ease-in-out;
+}
+
+.sass:hover .example, .sass:hover {
+  color: rgb(230, 13, 157);
+  transition: all 0.3s ease-in-out;
+}
+
+.mongo:hover .example, .mongo:hover {
+  color: rgb(49, 163, 78);
+  transition: all 0.3s ease-in-out;
+}
+
+.cpp:hover .example, .cpp:hover {
+  color: rgb(40, 127, 207);
+  transition: all 0.3s ease-in-out;
+}
+
+.py:hover .example, .py:hover {
+  color: rgb(228, 241, 38);
+  transition: all 0.3s ease-in-out;
+}
+
+.jquery:hover .example, .jquery:hover {
+  color: rgb(49, 109, 240);
+}
+
+.express:hover .example, .express:hover {
+  color: rgb(7, 204, 56);
+  transition: all 0.3s ease-in-out;
+}
+
+/* End of Hover Effects */
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .skill-section { 
+    padding-left: 122px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .skill-section {
+    padding-left: 90px;
+  }
+  .skill-header {
+    font-size: 34px;
+  }
+  .skill-name {
+    font-size: 15px;
+  }
+  .skill-paragraph {
+    font-size: 15px;
+  }
+
+  .skill-space {
+    margin-left: 205px;
+  }
+  
+  .express, .mongo {
+    margin-left: 215px;
+  }
+  
+  .jquery {
+    margin-left: 214px;
+  }
+  
+  .py {
+    margin-left: 280px;
+  }
+  
+  .sass {
+    margin-left: 228px;
+  }
+  
+  .css {
+    margin-left: 264px;
+  }
+
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 769px) {
+  .skill-section {
+    padding-left: 55px;
+    padding-top: 10px;
+  }
+  .skill-header {
+    font-size: 44px;
+  }
+  .skill-name {
+    font-size: 20px;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .skill-paragraph {
+    max-width: 100%;
+    font-size: 18.5px;
+  }
+
+  .skill-space {
+    margin-left: 315px;
+  }
+  
+  .express, .mongo {
+    margin-left: 332px;
+  }
+  
+  .jquery {
+    margin-left: 325px;
+  }
+  
+  .py {
+    margin-left: 408px;
+  }
+  
+  .sass {
+    margin-left: 345px;
+  }
+  
+  .css {
+    margin-left: 388px;
+  }
+
+  #mobile-res {
+    margin-left: 0px;
+    padding-top: 15px;
+  }
+
+}
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  .skill-header {
+    font-size: 21px;
+  }
+
+  .skill-paragraph {
+    font-size: 8px;
+  }
+
+  .skill-section {
+    padding-left: 35px;
+    padding-top: 10px;
+    margin-bottom: 175px;
+  }
+
+  .skills {
+    position: relative;
+    transform: scale(0.7);
+    right: 48px;
+    padding-top: 5px;
+  }
+  .css {
+    margin-left: 0;
+    padding-top: 13px;
+  }
+}
+
+/* End of Skill Section */
+
+
+/* Beginning of Project Section */
+
+.project-section {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 220px;
+  margin-bottom: 440px;
+}
+
+.work {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.project-overview {
+  padding-top: 50px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-container {
+  display: flex;
+  padding-top: 90px;
+}
+
+.main-project-container:hover .demo {
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.1s ease-in-out 0s;
+}
+
+.proj-img {
+  max-width: auto;
+  max-height: 300px;
+}
+
+.project-title {
+  padding-top: 30px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.project-desc {
+  padding-top: 25px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  max-width: 68%;
+}
+
+.links {
+  display: flex;
+  max-width: 82%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.demo {
+  padding-top: 25px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.spaced {
+  margin-left: 150px;
+}
+
+.spaced-container {
+  margin-left: 125px;
+}
+
+.spaced-container2 {
+  margin-left: 135px;
+}
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .project-section {
+    padding-left: 122px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .project-section {
+    padding-left: 90px;
+  }
+  .work {
+    font-size: 34px;
+  }
+  .project-title {
+    font-size: 34px;
+  }
+  .project-desc {
+    font-size: 15px;
+  }
+  .project-overview {
+    font-size: 15px;
+  }
+  .proj-img {
+    max-height: 250px;
+  }
+  .demo {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 769px) {
+  .project-section {
+    padding-left: 55px;
+  }
+  .project-container {
+    padding-top: 0;
+  }
+  .project-overview {
+    font-size: 17px;
+    max-width: 100%;
+  }
+  .work {
+    font-size: 44px;
+  }
+  .demo {
+    font-size: 20px;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+  .main-project-container {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .spaced-container2 {
+    margin-left: 0px;
+  }
+  .spaced-container {
+    margin-left: 0px;
+  }
+  .links {
+    max-width: 82%;
+  }
+  .top-mob {
+    padding-top: 55px;
+  }
+  .project-desc {
+    font-size: 17px;
+    max-width: 68%;
+  }
+  .proj-img {
+    max-width: auto;
+    max-height: 300px;
+  }
+}
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  .project-section {
+    padding-left: 35px;
+    padding-top: 0;
+    margin-bottom: 170px;
+  }
+
+  .work {
+    font-size: 21px;
+  }
+
+  .project-overview {
+    font-size: 8px;
+  }
+
+  .proj-img {
+    max-width: auto;
+    max-height: 160px;
+  }
+
+  .project-title {
+    font-size: 21px;
+  }
+
+  .project-desc {
+    font-size: 9px;
+  }
+
+  .links {
+    max-width: 100%;
+  }
+
+  .links p {
+    font-size: 9px;
+  }
+
+  .spaced {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .links {
+    max-width: 100%;
+  }
+
+  .project-desc {
+    max-width: 80%;
+  }
+}
+
+/* End of Project Section */
+
+/* Start of Contact Section */
+.contact-section {
+  position: relative;
+  padding-top: 95px;
+  /* padding-left: 220px; */
+  margin-bottom: 28px;
+}
+
+.main-contact {
+  display: flex;
+  padding-left: 270px;
+  padding-top: 150px;
+}
+
+.contact-message {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-sub {
+  padding-top: 25px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.labels {
+  color: #ffffff5b;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.inputs {
+  padding-top: 20px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff5b;
+  font-family: 'Mulish', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  outline: none;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ffffff5b;
+  width: 190%;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.spaced-even {
+  margin-left: 475px;
+}
+
+.message-section {
+  position: relative;
+  padding-top: 155px;
+  padding-left: 268px;
+  margin-bottom: 68px;
+}
+
+.inputs2 {
+  padding-top: 20px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff5b;
+  font-family: 'Mulish', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  outline: none;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ffffff5b;
+  width: 80%;
+}
+
+.button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  left: 795px;
+  max-width: 300px;
+  transform: scale(1.2);
+}
+
+.button button {
+  padding: 15px 64px;
+  margin: 30px 25px 30px 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+}
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .main-contact {
+    padding-left: 200px;
+  }
+
+  .message-section {
+    padding-left: 200px;
+  }
+
+  .button {
+    left: 700px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  .contact-message, .contact-sub {
+    padding-left: 5px;
+  }
+
+  .contact-message {
+    font-size: 34px;
+  }
+
+  .contact-sub {
+    font-size: 16px;
+  }
+
+  .main-contact {
+    padding-left: 90px;
+  }
+
+  .message-section {
+    padding-left: 90px;
+  }
+
+  .inputs {
+    width: 140%;
+  }
+
+  .button {
+    left: 550px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 769px) {
+
+  .contact-message, .contact-sub {
+    padding-left: 10px;
+  }
+  .contact-message {
+    font-size: 44px;
+  }
+  .contact-sub {
+    font-size: 24px;
+  }
+  .main-contact {
+    flex-direction: column;
+    padding-left: 55px;
+  }
+  .spaced-even {
+    margin-left: 0;
+  }
+  .message-section {
+    padding-left: 55px;
+    padding-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mob-div {
+    padding-top: 20px;
+  }
+  .inputs2 {
+    max-width: 85%;
+  }
+  .inputs {
+    max-width: 85%;
+  }
+  .button {
+    left: 230px;
+  }
+}
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  .contact-message {
+    font-size: 21px;
+  }
+
+  .contact-sub {
+    font-size: 10px;
+  }
+
+  .main-contact {
+    padding-left: 35px;
+    padding-top: 70px;
+  }
+
+  .message-section {
+    padding-left: 35px;
+  }
+
+  .button {
+    left: 55px;
+  }
+}
+
+
+
+/* End of Contact Section */
+
+/* Start of Footer */
+  footer h1 {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    padding-left: 163px;
+  }
+
+  footer li {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+
+  .copyright {
+    cursor: pointer;
+  }
+
+  .copyright:hover {
+    text-shadow: 0 0 20px #0099ff;
+  }
+  
+  .copyright:hover::after {
+    color: #0099ff;
+    filter: blur(15px);
+  }
+
+/* 4K Laptop Display */
+@media screen and (max-width: 1710px) {
+  .navbar2 h1 {
+    padding-left: 60px;
+  }
+}
+
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 769px) {
+    .navbar2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      transform: scale(0.8);
+    }
+    .navbar2 h1 {
+      padding-left: 0px;
+    }
+  
+    .menu2 {
+      list-style: none;
+      display: flex;
+      padding-right: 6px;
+      padding-left: 1px;
+    }
+  
+  }
+
+/* iPhone */
+@media screen and (max-width: 415px) {
+  .navbar2 {
+    transform: scale(0.7);
+    right: 10px;
+  }
+
+  footer h1, footer li {
+    font-size: 12px;
+  }
+
+
+  footer h1 {
+    position: relative;
+    left: -55px;
+  }
+
+  .menu2 {
+    /* padding-left: 70px; */
+    left: 82px;
+  }
+}
+
+/* End of Footer */
