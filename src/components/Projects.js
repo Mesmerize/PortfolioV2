@@ -30,7 +30,7 @@ const Projects = () => {
                         <p className='project-desc'>Colors landing page built with pure HTML, CSS, and JavaScript. Which helped practice my CSS layout abilities and design</p>
                         <div className='links'>
                             <a href="https://mesmerize.github.io/Colors/" target='_blank'><p className='demo'>View Live Demo &gt;</p></a>
-                            <a href="https://github.com/Mesmerize/Colors" target='_blank'><p className='spaced demo'>View Source Code &gt;</p></a>
+                            <a href="https://github.com/Mesmerize/Colors" target='_blank' className='spaced'><p className='demo'>View Source Code &gt;</p></a>
                         </div>
                     </div>
                     <div className="main-project-container">
@@ -39,7 +39,7 @@ const Projects = () => {
                         <p className='project-desc'>Built a React E-Commerce Store alongside using the Stripe API to be able to process payment transactions. Mimicking a real e-commerce store.</p>
                         <div className='links'>
                             <a href="https://reverent-cori-eda796.netlify.app/" target='_blank'><p className='demo'>View Live Demo &gt;</p></a>
-                            <a href="https://github.com/Mesmerize/EcomStore" target='_blank' className='spaced demo'><p className='demo'>View Source Code &gt;</p></a>
+                            <a href="https://github.com/Mesmerize/EcomStore" target='_blank' className='spaced'><p className='demo'>View Source Code &gt;</p></a>
                         </div>
                     </div>
                     <div className="main-project-container">
@@ -48,7 +48,7 @@ const Projects = () => {
                         <p className='project-desc'>Clone of a Starbucks Landing Page, built and designed with HTML, CSS, and JavaScript to mimick item changing features.</p>
                         <div className='links'>
                             <a href="https://mesmerize.github.io/Starbs/" target='_blank'><p className='demo'>View Live Demo &gt;</p></a>
-                            <a href="https://github.com/Mesmerize/Starbs" target='_blank' className='spaced demo'><p className='demo'>View Source Code &gt;</p></a>
+                            <a href="https://github.com/Mesmerize/Starbs" target='_blank' className='spaced'><p className='demo'>View Source Code &gt;</p></a>
                         </div>
                     </div>
                     <div className="main-project-container">
@@ -57,7 +57,7 @@ const Projects = () => {
                         <p className='project-desc'>React Weather Application, built with HTML, CSS, React, and Node JS. Which allows users to get weather updates from anywhere in the world.</p>
                         <div className='links'>
                             <a href="https://brandonsweatherapp.netlify.app/" target='_blank'><p className='demo'>View Live Demo &gt;</p></a>
-                            <a href="https://github.com/Mesmerize/WeatherApp" target='_blank' className='spaced demo'><p className='demo'>View Source Code &gt;</p></a>
+                            <a href="https://github.com/Mesmerize/WeatherApp" target='_blank' className='spaced'><p className='demo'>View Source Code &gt;</p></a>
                         </div>
                     </div>
                 </div>
