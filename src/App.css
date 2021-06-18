@@ -794,7 +794,10 @@ body::-webkit-scrollbar-track{
 .links {
   display: flex;
   max-width: 82%;
-  gap: 0px 175px;
+}
+
+.spaced {
+  margin-left: 160px;
 }
 
 a {
@@ -882,8 +885,13 @@ a {
   }
   .links {
     max-width: 82%;
-    gap: 0px 158px;
+    /* gap: 0px 158px; */
   }
+
+  .spaced {
+    margin-left: 150px;
+  }
+
   .top-mob {
     padding-top: 55px;
   }
@@ -929,6 +937,10 @@ a {
   .links {
     max-width: 100%;
     gap: 0px 115px;
+  }
+
+  .spaced {
+    margin-left: 115px;
   }
 
   .links p {
