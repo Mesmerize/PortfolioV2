@@ -587,6 +587,8 @@ body::-webkit-scrollbar-track{
 /* End of Hover Effects */
 
 /* 4K Laptop Display */
+
+
 @media screen and (max-width: 1710px) {
   .skill-section { 
     padding-left: 122px;
@@ -674,7 +676,8 @@ body::-webkit-scrollbar-track{
   }
   
   .css {
-    margin-left: 388px;
+    margin-left: 0px;
+    padding-top: 14px;
   }
 
   #mobile-res {
@@ -739,6 +742,20 @@ body::-webkit-scrollbar-track{
   font-weight: 600;
 }
 
+/* Testing New Project Layout */
+#project-container {
+  padding-top: 90px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap: 2rem;
+  row-gap: 8rem;
+  grid-column-gap: 3rem;
+  -webkit-column-gap: 2rem;
+  column-gap: 2rem;
+}
+/* End of Testing */
+
 .project-container {
   display: flex;
   padding-top: 90px;
@@ -771,12 +788,13 @@ body::-webkit-scrollbar-track{
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  max-width: 68%;
+  max-width: 65%;
 }
 
 .links {
   display: flex;
   max-width: 82%;
+  gap: 0px 175px;
 }
 
 a {
@@ -792,19 +810,18 @@ a {
   text-transform: uppercase;
 }
 
-.spaced {
-  margin-left: 150px;
-}
-
-.spaced-container {
-  margin-left: 125px;
-}
-
-.spaced-container2 {
-  margin-left: 135px;
-}
-
 /* 4K Laptop Display */
+
+@media screen and (max-width: 2000px) {
+  .links {
+    max-width: 100%;
+  }
+
+  .project-desc {
+    max-width: 65%;
+  }
+}
+
 @media screen and (max-width: 1710px) {
   .project-section {
     padding-left: 122px;
@@ -840,6 +857,9 @@ a {
   .project-section {
     padding-left: 55px;
   }
+  #project-container {
+    grid-template-columns: repeat(1,1fr);
+  }
   .project-container {
     padding-top: 0;
   }
@@ -860,21 +880,16 @@ a {
     padding-top: 15px;
     padding-bottom: 5px;
   }
-  .spaced-container2 {
-    margin-left: 0px;
-  }
-  .spaced-container {
-    margin-left: 0px;
-  }
   .links {
     max-width: 82%;
+    gap: 0px 158px;
   }
   .top-mob {
     padding-top: 55px;
   }
   .project-desc {
     font-size: 17px;
-    max-width: 68%;
+    max-width: 82%;
   }
   .proj-img {
     max-width: auto;
@@ -913,25 +928,13 @@ a {
 
   .links {
     max-width: 100%;
+    gap: 0px 115px;
   }
 
   .links p {
     font-size: 9px;
   }
 
-  .spaced {
-    margin-left: 100px;
-  }
-}
-
-@media screen and (max-width: 2000px) {
-  .links {
-    max-width: 100%;
-  }
-
-  .project-desc {
-    max-width: 80%;
-  }
 }
 
 /* End of Project Section */
@@ -993,6 +996,10 @@ a {
 }
 
 input:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::placeholder {
   color: transparent;
 }
 
