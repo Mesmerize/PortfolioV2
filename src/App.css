@@ -22,6 +22,10 @@ nav {
   padding-right: 10px;
 }
 
+.App {
+  overflow: hidden !important;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
