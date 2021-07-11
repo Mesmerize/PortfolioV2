@@ -32,7 +32,7 @@ const Contact = () => {
                     <textarea placeholder='Yo, I believe that we forgot to integrate the mailing API to our contact form LMAO.' className='inputs2' type="text" rows='2' name="message" required='required' id="" ></textarea>
                 </div>
                 <div className='button'>
-                    <a href="" className='space' target='_blank'><button type='submit' id='btn'>Send Message</button></a>
+                    <a href=" " className='space' target='_blank'><button type='submit' id='btn'>Send Message</button></a>
                 </div>
                 </form>
             </div>     

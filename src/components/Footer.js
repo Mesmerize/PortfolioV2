@@ -12,9 +12,9 @@ const Footer = () => {
             <nav className='navbar navbar2'>
             <h1 className='copyright'>© {(new Date().getFullYear())} BRANDON</h1>
                 <ul className='menu menu2'>
-                    <li className='item'> <a href="https://www.linkedin.com/in/mesmerize/" target='_blank'>LinkedIn</a></li>
-                    <li className='item'> <a href="https://www.github.com/mesmerize" target='_blank'>GitHub</a></li>
-                    <li className='item'> <a href="https://discord.gg/gpr6tU7W" target='_blank'>Discord</a></li>
+                    <li className='item'> <a href="https://www.linkedin.com/in/mesmerize/" target='_blank' rel="noreferrer">LinkedIn</a></li>
+                    <li className='item'> <a href="https://www.github.com/mesmerize" target='_blank' rel="noreferrer">GitHub</a></li>
+                    <li className='item'> <a href="https://discord.gg/gpr6tU7W" target='_blank' rel="noreferrer">Discord</a></li>
                 </ul>
             </nav>
         </footer>
