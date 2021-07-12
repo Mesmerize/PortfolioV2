@@ -46,7 +46,7 @@ const Projects = () => {
                     <div className="main-project-container">
                         <img src={pic} className='proj-img' alt="" />
                         <h1 className='project-title'>Colors Landing Page</h1>
-                        <p className='project-desc'>Colors landing page built with pure HTML, CSS, and JavaScript. Which helped practice my CSS layout abilities and design</p>
+                        <p className='project-desc'>Colors landing page built with pure HTML, CSS, and JavaScript. Which helped practice my CSS layout abilities and design, while also building a business related site.</p>
                         <div className='links'>
                             <a href="https://mesmerize.github.io/Colors/" target='_blank' rel="noreferrer"><p className='demo'>View Live Demo &gt;</p></a>
                             <a href="https://github.com/Mesmerize/Colors" target='_blank' rel="noreferrer" className='spaced'><p className='demo'>View Source Code &gt;</p></a>
@@ -55,7 +55,7 @@ const Projects = () => {
                     <div className="main-project-container">
                         <img className='proj-img' src={pic5} alt="" />
                         <h1 className='project-title'>E-Commerce Store</h1>
-                        <p className='project-desc'>Built a React E-Commerce Store alongside using the Stripe API to be able to process payment transactions. Mimicking a real e-commerce store.</p>
+                        <p className='project-desc'>Built a React E-Commerce Store alongside using the Stripe API to be able to process payment transactions. Mimicking a real e-commerce store's functionality.</p>
                         <div className='links'>
                             <a href="https://reverent-cori-eda796.netlify.app/" target='_blank' rel="noreferrer"><p className='demo'>View Live Demo &gt;</p></a>
                             <a href="https://github.com/Mesmerize/EcomStore" target='_blank' rel="noreferrer" className='spaced'><p className='demo'>View Source Code &gt;</p></a>
@@ -64,7 +64,7 @@ const Projects = () => {
                     <div className="main-project-container">
                     <img src={pic3} className='proj-img' alt="" />
                         <h1 className='project-title'>Starbucks Landing Page</h1>
-                        <p className='project-desc'>Clone of a Starbucks Landing Page, built and designed with HTML, CSS, and JavaScript to replicate item changing features.</p>
+                        <p className='project-desc'>Clone of a Starbucks Landing Page, built and designed with HTML, CSS, and JavaScript to practice and keep my skills sharp.</p>
                         <div className='links'>
                             <a href="https://mesmerize.github.io/Starbs/" target='_blank' rel="noreferrer"><p className='demo'>View Live Demo &gt;</p></a>
                             <a href="https://github.com/Mesmerize/Starbs" target='_blank' rel="noreferrer" className='spaced'><p className='demo'>View Source Code &gt;</p></a>
